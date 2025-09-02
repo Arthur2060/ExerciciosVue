@@ -6,6 +6,7 @@
   import MeuLink from './components/MeuLink.vue'
   import MinhaTabela from './components/MinhaTabela.vue'
   import MeuCard from './components/MeuCard.vue'
+  import MeuRodape from './components/MeuRodape.vue'
 </script>
 
 <template>
@@ -20,6 +21,7 @@
     { nome: 'Charlie', idade: 35, email: 'charlie@gmail.com', telefone: '000000000' }
   ]"/>
   <MeuCard titulo="Card de Exemplo" paragrafo="Este é um card que utiliza props para exibir um título e um parágrafo."/>
+  <MeuRodape />
 </template>
 
 <style scoped>
