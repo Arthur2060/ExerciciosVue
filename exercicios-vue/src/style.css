@@ -1,5 +1,18 @@
 :root {
   --cor-de-texto: #42b983;
-  --cor-de-fundo: #35495e;
+  --cor-de-fundo: rgb(80, 76, 76);
   --cor-de-borda: gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-de-texto);
+  padding: 20px;
 }

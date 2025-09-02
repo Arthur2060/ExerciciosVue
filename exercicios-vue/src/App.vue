@@ -7,6 +7,7 @@
   import MinhaTabela from './components/MinhaTabela.vue'
   import MeuCard from './components/MeuCard.vue'
   import MeuRodape from './components/MeuRodape.vue'
+  import MeuCabecalho from './components/MeuCabecalho.vue'
 </script>
 
 <template>
@@ -22,6 +23,7 @@
   ]"/>
   <MeuCard titulo="Card de Exemplo" paragrafo="Este é um card que utiliza props para exibir um título e um parágrafo."/>
   <MeuRodape />
+  <MeuCabecalho logo="https://vuejs.org" :secoes="[ 'sobre nós', 'home', 'contato' ]"/>
 </template>
 
 <style scoped>
