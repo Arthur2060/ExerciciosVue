@@ -21,11 +21,11 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 10px 20px;
         background-color: rgb(80, 76, 76);
         color: #42b983;
         width: 100%;
-        height: fit-content;
+        height: 5vh;
+        border-bottom: solid 2px gray;
     }
 
     img {
@@ -35,16 +35,19 @@
     nav ul {
         list-style: none;
         display: flex;
-        gap: 15px;
         margin: 0;
         padding: 0;
     }
 
     nav li {
-        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s;
+        height: 5vh;
+        padding: 2%;
     }
 
     nav li:hover {
-        text-decoration: underline;
+        background-color: gray;
     }
 </style>

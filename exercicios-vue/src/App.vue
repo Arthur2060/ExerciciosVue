@@ -12,20 +12,10 @@
 </script>
 
 <template>
-  <MeuTitulo titulo="Aprendendo Vue.js"/>
-  <MeuParagrafo paragrafo="Este é um parágrafo de exemplo para demonstrar a passagem de props em Vue.js."/>
-  <MinhaLista :itens="['Item 1', 'Item 2', 'Item 3', 'Item 4']"/>
-  <MinhaImagem imagem="https://vuejs.org/images/logo.png" descricao="Logo do Vue.js"/>
-  <MeuLink url="https://vuejs.org" texto="Visite o site oficial do Vue.js"/>
-  <MinhaTabela :usuarios="[
-    { nome: 'Alice', idade: 30, email: 'alice@gmail.com', telefone: '000000000' },
-    { nome: 'Bob', idade: 25, email: 'bob@gmail.com', telefone: '000000000' },
-    { nome: 'Charlie', idade: 35, email: 'charlie@gmail.com', telefone: '000000000' }
-  ]"/>
-  <MeuCard titulo="Card de Exemplo" paragrafo="Este é um card que utiliza props para exibir um título e um parágrafo."/>
-  <MeuRodape />
-  <MeuCabecalho logo="https://vuejs.org" :secoes="[ 'sobre nós', 'home', 'contato' ]"/>
-  <MeuFormulario :items="[ 'Nome', 'email', 'telefone', 'idade' ]"/>
+  <MeuCabecalho logo="https://vuejs.org/images/logo.png" :secoes="[ 'sobre nós', 'home', 'contato' ]"/>
+  <main>
+    <MinhaImagem imagem="https://vuejs.org/images/logo.png" descricao="Logo do Vue.js"/>
+  </main>
 </template>
 
 <style scoped>
