@@ -1,4 +1,5 @@
 <script setup>
+  import { ref } from 'vue'
   import MeuTitulo from './components/MeuTitulo.vue'
   import MeuParagrafo from './components/MeuParagrafo.vue'
   import MinhaLista from './components/MinhaLista.vue'
@@ -9,6 +10,14 @@
   import MeuRodape from './components/MeuRodape.vue'
   import MeuCabecalho from './components/MeuCabecalho.vue'
   import MeuFormulario from './components/MeuFormulario.vue'
+
+  const usuarios = ref([
+    {nome: 'Bruno', email: 'bruno@gmail.com', telefone: '00000000', idade: '18'},
+  ])
+
+  const adicionarUsuario = (novoUsuario) => {
+    usuarios.value.push(novoUsuario)
+  }
 </script>
 
 <template>
@@ -22,6 +31,10 @@
   <div style="display: flex; margin: 2%; align-items: center;">
     <MinhaLista :itens="[ 'Maça', 'Banana', 'Pera' ]" />
     <MeuParagrafo paragrafo="Além de estilizar, o vue tambêm conta com recursos para interatividade e responsividade do site" />
+  </div>
+  <div style="display: flex; margin: 2%; align-items: center; justify-content: space-around;">
+    <MeuFormulario @adicionar-usuario="adicionarUsuario" />
+    <MinhaTabela :usuarios="usuarios" />
   </div>
 </template>
 
