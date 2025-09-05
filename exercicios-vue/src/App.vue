@@ -28,13 +28,15 @@
   </main>
   <MeuParagrafo paragrafo="O vue é um framework para javascript focado na modularização de projetos, criando uma estrutura de componentes
   combinaveis mais faceis de alterar individualmento e compor no seu site, assim, facilitando a criação de layouts unicos e distintos"/>
-  <div style="display: flex; margin: 2%; align-items: center;">
-    <MinhaLista :itens="[ 'Maça', 'Banana', 'Pera' ]" />
-    <MeuParagrafo paragrafo="Além de estilizar, o vue tambêm conta com recursos para interatividade e responsividade do site" />
-  </div>
-  <div style="display: flex; margin: 2%; align-items: center; justify-content: space-around;">
-    <MeuFormulario @adicionar-usuario="adicionarUsuario" />
-    <MinhaTabela :usuarios="usuarios" />
+  <div id="container" style="display: flex; justify-content: space-around; margin: 20px;">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 15%;">
+      <MeuParagrafo paragrafo="Além de estilizar, o vue tambêm conta com recursos para interatividade e responsividade do site" />
+      <MinhaLista :itens="[ 'Maça', 'Banana', 'Pera' ]" />
+    </div>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px; width: 50%;">
+      <MeuFormulario @adicionar-usuario="adicionarUsuario"/>
+      <MinhaTabela :usuarios="usuarios" />
+    </div>
   </div>
 </template>
 

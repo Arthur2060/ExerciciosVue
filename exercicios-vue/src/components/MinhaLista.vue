@@ -36,7 +36,7 @@
         background-color: rgb(80, 76, 76);
         border: solid 5px gray;
         width: fit-content;
-        padding: 1%;
+        padding: 10%;
         margin: 3%;
     }
 
