@@ -10,12 +10,11 @@
 
 <style scoped>
     p {
-        border-radius: 20px;
         font-family: Arial, Helvetica, sans-serif;
         color: #42b983;
         background-color: rgb(80, 76, 76);
-        border: solid 5px gray;
         width: fit-content;
+        height: fit-content;
         padding: 3%;
     }
 </style>

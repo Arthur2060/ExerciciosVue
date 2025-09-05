@@ -21,7 +21,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: rgb(80, 76, 76);
+        background-color: rgb(61, 58, 58);
         color: #42b983;
         width: 100%;
         height: 5vh;
